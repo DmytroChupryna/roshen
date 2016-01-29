@@ -1,7 +1,24 @@
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
-
+@font-face {
+    font-family: 'RobotoL';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Roboto Light'), local('Roboto-Light'), url("Roboto/Roboto-Light-webfont.ttf") format('truetype'), url("Roboto/Roboto-Light-webfont.svg#robotolight") format('svg');
+}
+@font-face {
+    font-family: 'RobotoN';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Roboto'), local('Roboto-Regular'), url("Roboto/Roboto-Regular-webfont.ttf") format('truetype'), url("Roboto/Roboto-Regular-webfont.svg#robotolight") format('svg');
+}
+@font-face {
+    font-family: 'RobotoB';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url("Roboto/Roboto-Bold-webfont.ttf") format('truetype'), url("Roboto/Roboto-Bold-webfont.svg#robotolight") format('svg');
+}
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
@@ -74,7 +91,7 @@ body {
 }
 a{
     box-shadow: none !important;
-
+    text-decoration: none;
 }
 .burgerIcon span{
     background: #c2b59e;
@@ -129,6 +146,48 @@ a{
 .ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited{
     color:inherit ;
 }
+.icon-play {
+    background: url('../img/icon-play.png') no-repeat !important;
+    width: 73px;
+    height: 72px;
+    display: block;
+    position: absolute;
+    top: 21%;
+    left: 39%;
+}
+.oneSlide>a img{
+    display: block;
+    width: 100%;
+}
+.oneSlide>div>a{
+    position: relative;
+    display: block;
+}
+.videoSlider{
+    height: 220px;
+    width: 100%;
+}
+.item-text-wrap h2{
+    font-family: 'RobotoB';
+    color: #dad3c5;
+    font-size: 20px;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+}
+.item-text-wrap{
+    padding: 10px 20px;
+    background: rgba(17,4,0,0.8);
+}
+#mainPage{
+    padding: 0 10px;
+}
 /*
-http://roshen-mobile.xpage.com.ua/sync/?action=get_sections_list http://roshen-mobile.xpage.com.ua/sync/?action=get_section_products&section_id=11
+    font-family: 'RobotoL';
+    font-family: 'RobotoN';
+    font-family: 'RobotoB';
+
+http://roshen-mobile.xpage.com.ua/sync/?action=get_sections_list
+http://roshen-mobile.xpage.com.ua/sync/?action=get_section_products&section_id=11
 */

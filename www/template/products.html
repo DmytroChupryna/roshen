@@ -1,0 +1,14 @@
+<div data-role="content" id="mainPage" ng-controller="productsCtrl">
+   <ul>
+       <li ng-repeat="cat in category">
+           <a href="/">
+               {{cat.name}}
+           </a>
+           <ul>
+               <li ng-repeat="prod in products">
+                   <div>{{prod.title}}</div>
+               </li>
+           </ul>
+       </li>
+   </ul>
+</div>

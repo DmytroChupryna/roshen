@@ -1,0 +1,24 @@
+<div data-role="content" id="mainPage" ng-controller="homeCtrl">
+    <div class="videos">
+        <ul rn-carousel rn-carousel-buffered rn-carousel-auto-slide rn-carousel-indicator="true" rn-carousel-easing="easeInOutQuad" rn-carousel-duration="1000" class="videoSlider">
+            <li  ng-repeat="video in videos">
+                <div class="oneSlide">
+                    <a href="https://www.youtube.com/watch?v={{video.id}}" class="">
+                        <img src="../img/content/youtube-thumb.jpg" class="item-image">
+                        <i class="icon icon-play"></i>
+                        <div class="item-text-wrap">
+                            <h2>{{video.title}}</h2>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="padding-horizontal"><hr></div>
+    <nav class="mainBigNav">
+        <a href="/{{item.link}}" class="item" ng-repeat="item in mainMenu" data-transition="slide">
+            {{item.name}}
+            <i class="icon icon-chevron_right"></i>
+        </a>
+    </nav>
+</div>
