@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <title>Roshen</title>
+</head>
+<body>
+<div data-role="page" id="home" >
+    <div class="mainHeader" data-role="header" data-position="fixed" data-id="mainHeader" data-add-back-btn="true">
+        <a href="#left-panel" class="icon burgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a class="mainLogo" href="#home" data-transition="slide">
+            <img src="img/logo_.svg" alt="">
+        </a>
+    </div>
+    <div data-role="content" id="mainPage">
+            <div class="videos">
+                <div>
+                    <div class="">
+                        <img src="img/content/youtube-thumb.jpg" class="item-image">
+                        <i class="icon-play"></i>
+                        <div class="item-text-wrap">
+                            <h2 class="stable"></h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="padding-horizontal"><hr></div>
+            <nav class="mainBigNav">
+                <a href="#catalog" class="item">
+                    Products
+                    <i class="icon icon-chevron_right"></i>
+
+                </a>
+                <a href="#about" class="item"  data-transition="slide">
+                    About ROSHEN
+                    <i class="icon icon-chevron_right"></i>
+                </a>
+                <a href="#contacts" class="item">
+                    Contacts
+                    <i class="icon icon-chevron_right"></i>
+                </a>
+            </nav>
+    </div>
+    <div data-role="panel" id="left-panel" data-display="overlay" data-position="fixed">
+            <p>Left reveal panel.</p>
+            <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+    </div>
+</div>
+
+</body>
+</html>

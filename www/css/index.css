@@ -1,0 +1,134 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+
+
+.mainHeader{
+    background: #290c03 !important;
+    height: 60px;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding-left: 5%;
+    border: none !important;
+}
+.icon{
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative ;
+    top: 0;
+    outline: none !important;
+}
+a{
+    box-shadow: none !important;
+
+}
+.burgerIcon span{
+    background: #c2b59e;
+    height: 2px;
+    display: block;
+}
+.burgerIcon{
+    width: 26px;
+    height: 26px;
+    display: flex !important;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.mainLogo{
+    background: none !important;
+    border: none !important;
+    position: relative !important;
+    margin: 0 20px !important;
+}
+.ui-panel{
+    width: 25em;
+}
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay, .ui-panel-animate.ui-panel-position-left.ui-panel-display-push{
+    -webkit-transform: translate3d(-25em,0,0);
+    -moz-transform: translate3d(-25em,0,0);
+    transform: translate3d(-25em,0,0);
+}
+.mainBigNav a:last-child{
+    margin-bottom: 0;
+}
+.mainBigNav a{
+    font-family: 'Times New Roman',sans-serif;
+    font-size: 36px;
+    text-transform: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 25px 0;
+    color: #f7f0e2;
+    text-shadow: none;
+}
+.icon.icon-chevron_right{
+    background: url("../img/ic_chevron_right_cream_24dp.svg")no-repeat !important;
+    width: 40px;
+    background-size: 100% !important;
+}
+#home{
+    background: url("../img/bg-main.jpg")no-repeat center;
+    background-size: cover;
+}
+.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited{
+    color:inherit ;
+}
+/*
+http://roshen-mobile.xpage.com.ua/sync/?action=get_sections_list http://roshen-mobile.xpage.com.ua/sync/?action=get_section_products&section_id=11
+*/
